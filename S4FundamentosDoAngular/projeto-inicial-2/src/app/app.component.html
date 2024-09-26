@@ -1,0 +1,58 @@
+<!-- <input 
+    id="meu-input" 
+    [value]="inputText" 
+    [type]="inputType" 
+    [disabled]="isDisabled"
+    (keyup)="handleInputKeyup($event)"/>
+
+<br>
+
+<button (click)="enableInput()">Habilitar</button>
+<button (click)="disableInput()">Desabilitar</button>
+
+<br>
+
+<button (click)="setPasswordTypeInput()">Senha</button>
+<button (click)="setTextTypeInput()">Texto</button>
+
+<br>
+
+<button (click)="logInputText()">Log</button>
+
+<br>
+
+<button [attr.title] = "buttonTitle">Teste</button>
+
+<button [attr.disabled]="buttonDisable ? true : null">Disabled</button>
+
+<button (click)="onButtonClick()">Mundar Props</button> -->
+
+<button style="width: 100px; background-color: aqua;">Botão 0</button> <br>
+
+<button [style.width]="widfhButton1" [style.backgroundColor]="'blue'">Botão 1</button><br>
+
+<button [style.width.px]="widfhButton2"[style.backgroundColor]="'pink'">Botão 2</button><br>
+
+<button [style]="'width:140px; backgroundColor: brown;'">Botão 3</button><br>
+
+<button [style]="{ width:'150px', backgroundColor: 'orange'}">Botão 4</button><br>
+
+<button [style]="stylesObj">Botão 5</button>
+
+<br>
+
+<button (click)="updateStyleObj()">atualizar Obj</button>
+
+<button (click)="updateStyleObjCorrect()">atualizar Obj</button>
+
+<button (click)="updateWidth()">atualizar Width</button> <br>
+
+<button [class.red-button]="isRedButton" (click)="isGreenButton = false;">Vermelho</button>
+
+<button [class.green-button]="true" (click)="isGreenButton = true;">Verde</button>
+
+<button [class]="{
+    'red-button': !isGreenButton,
+    'green-button': isGreenButton,
+    
+}">Objeto</button>
